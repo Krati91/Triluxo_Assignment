@@ -14,7 +14,8 @@ system = SystemMessagePromptTemplate.from_template('''You are helpful AI assista
                                                    based on the provided context.''')
 
 prompt = '''Answer user question based on the provided context only! If you do not know the answer, just say 
-            "I'm sorry, I didn't quite understand that. Could you rephrase?". Provide a concise answer.
+            "I'm sorry, I didn't quite understand that. Could you rephrase?". You can accept greeting messages.
+            Provide a concise answer.
         ### Context:
             {context}
             
